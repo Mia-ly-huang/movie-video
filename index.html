@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>光影 - 视频展示</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Microsoft YaHei', 'PingFang SC', sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 960px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            padding: 30px 40px 20px;
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #333333;
+            font-size: 2.2em;
+            font-weight: 300;
+            letter-spacing: 8px;
+        }
+
+        .header .subtitle {
+            color: #999999;
+            font-size: 0.9em;
+            margin-top: 8px;
+            letter-spacing: 4px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            margin: 0 40px 40px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+            background: #000;
+        }
+
+        video {
+            width: 100%;
+            display: block;
+            outline: none;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 0 40px 30px;
+            color: #cccccc;
+            font-size: 0.8em;
+            letter-spacing: 2px;
+        }
+
+        .decor-line {
+            width: 60px;
+            height: 2px;
+            background: #ddd;
+            margin: 15px auto 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>光 影</h1>
+            <p class="subtitle">基于大数据的电影推荐平台</p>
+            <div class="decor-line"></div>
+        </div>
+
+        <div class="video-wrapper">
+            <video controls controlsList="nodownload" preload="metadata">
+                <source src="光影.mp4" type="video/mp4">
+                您的浏览器不支持 HTML5 视频播放，请升级浏览器。
+            </video>
+        </div>
+
+        <div class="footer">
+            © 光影 · 视频展示
+        </div>
+    </div>
+</body>
+</html>
